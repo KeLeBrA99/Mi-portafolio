@@ -55,7 +55,7 @@ export default function Contact() {
       <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
 
         {/* Header */}
-        <p className="reveal section-label">04 Contacto</p>
+        <p className="reveal section-label"> Contacto</p>
         <h2 className="reveal font-syne font-black leading-tight tracking-tight mb-4 text-[clamp(1.8rem,6vw,2.8rem)]">
           Construyamos algo juntos
         </h2>
