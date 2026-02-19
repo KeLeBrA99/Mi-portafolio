@@ -9,7 +9,7 @@ const contactItems = [
   { icon: '\u2709',       label: 't4hkelebra1@gmail.com',       href: 'mailto:t4hkelebra1@gmail.com' },
   { icon: '\uD83D\uDCF1', label: '+57 310 203 4907',             href: 'https://wa.me/573102034907' },
   { icon: '\u2325',       label: 'github.com/KeLeBrA99',         href: 'https://github.com/KeLeBrA99' },
-  { icon: '\uD83D\uDD17', label: 'linkedin.com/in/tu-perfil',    href: 'https://linkedin.com' },
+  { icon: '\uD83D\uDD17', label: 'www.linkedin.com/in/jose-salamanca-32b85620b/',    href: 'https://www.linkedin.com/in/jose-salamanca-32b85620b/' },
   { icon: '\uD83D\uDCCD', label: 'Colombia - Disponible remoto', href: null },
 ]
 
