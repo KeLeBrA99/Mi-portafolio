@@ -41,10 +41,10 @@ export default function Hero() {
 
         {/* Botones */}
         <div className="flex flex-wrap gap-4 mt-10 animate-fade-up">
-          <Button variant="primary" href="https://github.com/KeLeBrA99">
+          <Button variant="primary" href="#projects">
             Ver Proyectos
           </Button>
-          <Button variant="ghost" href="/assets/cv-jose-salamanca.pdf">
+          <Button variant="ghost" href="/cv-jose-salamanca.pdf" download>
             Descargar CV
           </Button>
         </div>
@@ -59,11 +59,8 @@ export default function Hero() {
       {/* Foto derecha */}
       <div className="flex-shrink-0 flex items-center justify-center animate-fade-up">
         <div className="relative">
-          {/* Anillo exterior animado */}
           <div className="absolute inset-0 rounded-full border-2 border-[#00d4aa] opacity-30 animate-ping" />
-          {/* Anillo fijo */}
           <div className="absolute -inset-2 rounded-full border border-[#00d4aa] opacity-20" />
-          {/* Foto */}
           <img
             src="/profile.jpg"
             alt="Jose Salamanca"
@@ -73,7 +70,6 @@ export default function Hero() {
               e.target.nextSibling.style.display = 'flex'
             }}
           />
-          {/* Placeholder si no hay foto */}
           <div
             style={{ display: 'none' }}
             className="w-56 h-56 md:w-72 md:h-72 rounded-full border-4 border-[#00d4aa] shadow-[0_0_40px_rgba(0,212,170,0.25)] bg-[#111820] items-center justify-center relative z-10"
