@@ -41,7 +41,7 @@ export default function Hero() {
 
         {/* Botones */}
         <div className="flex flex-wrap gap-4 mt-10 animate-fade-up">
-          <Button variant="primary" href="#projects">
+          <Button variant="primary" href="https://github.com/KeLeBrA99">
             Ver Proyectos
           </Button>
           <Button variant="ghost" href="/cv-jose-salamanca.pdf" download>
