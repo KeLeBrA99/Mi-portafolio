@@ -74,7 +74,7 @@ export default function Contact() {
       <div className="max-w-5xl mx-auto px-8 py-24 grid md:grid-cols-2 gap-16 items-start">
 
         <div>
-          <p className="reveal section-label">04 Contacto</p>
+          <p className="reveal section-label"> Contacto</p>
           <h2 className="reveal font-syne font-black leading-tight tracking-tight mb-4 text-4xl">
             Construyamos algo juntos
           </h2>

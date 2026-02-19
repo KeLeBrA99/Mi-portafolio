@@ -22,7 +22,7 @@ export default function Projects() {
   return (
     <section id="projects" ref={ref} className="relative z-10 max-w-5xl mx-auto px-8 py-24">
 
-      <p className="reveal section-label">03 — Proyectos</p>
+      <p className="reveal section-label"> Proyectos</p>
       <h2 className="reveal font-syne font-black text-[clamp(1.8rem,5vw,2.8rem)] leading-tight tracking-tight mb-14">
         Lo que he <span className="text-outline-sm">construido</span>
       </h2>

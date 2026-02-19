@@ -75,7 +75,7 @@ export default function Experience() {
   return (
     <section id="experience" ref={ref} className="relative z-10 max-w-5xl mx-auto px-8 py-24">
 
-      <p className="reveal section-label">05 — Experiencia</p>
+      <p className="reveal section-label">Experiencia</p>
       <h2 className="reveal font-syne font-black text-[clamp(1.8rem,5vw,2.8rem)] leading-tight tracking-tight mb-14">
         Mi <span className="text-outline-sm">trayectoria</span>
       </h2>

@@ -25,7 +25,7 @@ export default function Skills() {
     <section id="skills" ref={ref} className="relative z-10 bg-dark2 border-y border-[#1e2d3d]">
       <div className="max-w-5xl mx-auto px-8 py-24">
 
-        <p className="reveal section-label">02 — Habilidades</p>
+        <p className="reveal section-label"> Habilidades</p>
         <h2 className="reveal font-syne font-black text-[clamp(1.8rem,5vw,2.8rem)] leading-tight tracking-tight mb-14">
           Mi <span className="text-outline-sm">tech stack</span>
         </h2>
