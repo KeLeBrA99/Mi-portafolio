@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Fuentes globales ── */
+body {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ── Variables modo OSCURO (default) ── */
+:root {
+  --bg:      #080c10;
+  --bg2:     #0d1117;
+  --surface: #111820;
+  --border:  #1e2d3d;
+  --text:    #cdd9e5;
+  --muted:   #546e7a;
+  --accent:  #00d4aa;
+  --accent2: #f7931a;
+}
+
+/* ── Variables modo CLARO ── */
+:root.light,
+html.light {
+  --bg:      #f0f4f8;
+  --bg2:     #e8edf2;
+  --surface: #ffffff;
+  --border:  #d0dae4;
+  --text:    #1a2332;
+  --muted:   #607080;
+  --accent:  #008f76;
+  --accent2: #d4801a;
+}
+
+/* ── Aplicar variables al body ── */
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.35s, color 0.35s;
+  overflow-x: hidden;
+}
+
+/* ── Scrollbar personalizado ── */
+::-webkit-scrollbar       { width: 3px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+/* ── Grid overlay decorativo ── */
+.grid-overlay {
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,212,170,.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,170,.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Reveal al hacer scroll ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .65s ease, transform .65s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Texto outline ── */
+.text-outline {
+  -webkit-text-stroke: 2px var(--accent);
+  color: transparent;
+}
+.text-outline-sm {
+  -webkit-text-stroke: 1.5px var(--accent);
+  color: transparent;
+}
+
+/* ── Cursor parpadeante ── */
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+  color: var(--accent);
+}
+
+/* ── Clases utilitarias con variables CSS ── */
+.bg-theme        { background-color: var(--bg); }
+.bg-theme2       { background-color: var(--bg2); }
+.bg-surface      { background-color: var(--surface); }
+.border-theme    { border-color: var(--border); }
+.text-theme      { color: var(--text); }
+.text-muted-th   { color: var(--muted); }
+.text-accent-th  { color: var(--accent); }
+.text-accent2-th { color: var(--accent2); }
+
+/* ── Section label ── */
+.section-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.section-label::before {
+  content: '//';
+  opacity: 0.5;
+}
+
+/* ── Animaciones ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+@keyframes pulseDot {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0,212,170,.4); }
+  70%       { box-shadow: 0 0 0 8px rgba(0,212,170,0); }
+}
+
+.animate-fade-up   { animation: fadeUp .7s ease both; }
+.animate-float     { animation: float 3s ease-in-out infinite; }
+.animate-pulse-dot { animation: pulseDot 2s infinite; }
